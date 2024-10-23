@@ -1137,6 +1137,8 @@ class Tapper:
                 self.http = HttpRequest(proxy, headers["User-Agent"])
 
                 logger.info(f"{self.session_name} | bind with proxy ip: {proxy}")
+            else:
+                self.http = HttpRequest(proxy, headers["User-Agent"])
 
         else:
 
